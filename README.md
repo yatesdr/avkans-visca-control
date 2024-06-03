@@ -2,7 +2,10 @@
 
 Visca over TCP control for AVKans E20 Cameras, and probably other AvKans or PTZOptics cameras.
 
-This package is really intended for the E20 NDI camera, and includes computations based on it's geometry and speed characterizations.   It was originally created to allow for real-time AI camera functionality via Python.
+## Background
+AVKans makes a line of affordable NDI-HX cameras that work very well, but the visca / TCP controls are a bit quirky.  This library is specifically targeted at the inexpensive E20 cameras, but should work with most of the Avkans or PTZ Optics lineup, and is a good base for developing other Sony Visca TCP applications.
+
+This package is designed around controlling the E20 NDI camera, and includes computations based on it's geometry and speed characterizations.   It was originally created to allow for real-time AI camera functionality via Python.  AVKans publishes (incomplete) documentation on the TCP commands, and a number of them simply do not work.   I removed those from this library, so all the commands available in this library have been tested and work with E-20 Firmware version 1.0.10
 
 This package is not distributed by or endorsed by AVKans.
 
@@ -35,6 +38,4 @@ while(True):
 ```
 
 
-AVKans makes a line of affordable NDI cameras that work very well, but the visca / TCP controls are a bit quirky.
 
-This library is specifically targeted at the inexpensive E20 cameras, but should work with most of the Avkans or PTZ Optics lineup.
